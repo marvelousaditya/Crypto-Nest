@@ -10,9 +10,7 @@ app.set("view engine", "ejs");
 const PORT = process.env.PORT || 8080;
 // Mongo DB initialisation
 async function run() {
-  await mongoose.connect(
-    "mongodb+srv://adityaisgood20:passedFailur3@usercluster.0hdfnro.mongodb.net/CryptoApp"
-  );
+  await mongoose.connect("DATABASE");
   console.log("Database Connected");
 }
 run().catch((e) => {
